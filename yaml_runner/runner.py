@@ -11,9 +11,5 @@ with open(Path('example.yaml')) as file:
         print(f"full_module_name: {full_module_name}")
         mymodule = importlib.import_module(full_module_name)
 
-        # method_to_call = getattr(mymodule, method_name)
-        # result = method_to_call()
-        locals()[method_name]()
-
-    print(yaml_list)
-
+        method_to_call = getattr(mymodule, method_name)
+        result = method_to_call()
