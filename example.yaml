@@ -1,0 +1,4 @@
+ - command:
+    import: example
+    method: tester
+    arguments: [test, test2, test3]
